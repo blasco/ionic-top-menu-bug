@@ -1,0 +1,31 @@
+ion-toolbar {
+  --background: #fff;
+}
+
+#mobile-toolbar-content {
+  --background: #fff;
+}
+
+$icon-size: 30px;
+ion-icon {
+  margin-right: 15px;
+  height: $icon-size;
+  width: $icon-size;
+}
+
+ion-list {
+  padding-right: 20px;
+}
+
+.item-text {
+  text-transform:uppercase;
+  font-size: 15px;
+}
+
+.item-text.bold {
+  font-weight: bold;
+}
+
+.item-text.disabled {
+  color: #ccc;
+}

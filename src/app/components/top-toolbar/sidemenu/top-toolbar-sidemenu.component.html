@@ -1,0 +1,79 @@
+<ion-menu side="end" content-id="main-content" class="mobile-visible" #ionMenu>
+  <ion-header>
+    <ion-toolbar></ion-toolbar>
+  </ion-header>
+
+  <ion-content id="mobile-toolbar-content">
+    <ion-list>
+
+      <ion-item 
+               (click)="navigate('/signin')">
+        <ion-icon name="person"></ion-icon>
+        <div class="item-text orange bold">Sign In</div>
+      </ion-item>
+
+      <ion-item
+             (click)="navigate('/admin')">
+        <ion-icon name="build"></ion-icon>
+        <div class="item-text bold enabled">Admin Panel</div>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="log-out"></ion-icon>
+        <div class="item-text bold enabled">Sign Out</div>
+      </ion-item>
+
+      <ion-item (click)="navigate('dinner')">
+        <ion-icon src="/assets/icon/icon-dinner.svg" class="menu-item-icon"></ion-icon>
+        <div class="item-text bold enabled">Dinner</div>
+      </ion-item>
+
+      <ion-item (click)="navigate('bar')">
+        <ion-icon src="/assets/icon/icon-bar-disabled.svg" class="menu-item-icon"></ion-icon>
+        <div class="item-text bold disabled">Bar</div>
+      </ion-item>
+
+      <ion-item (click)="navigate('night')">
+        <ion-icon src="/assets/icon/icon-night-disabled.svg" class="menu-item-icon"></ion-icon>
+        <div class="item-text bold disabled">Night</div>
+      </ion-item>
+
+      <ion-item (click)="navigate('sport')">
+        <ion-icon src="/assets/icon/icon-sport-disabled.svg" class="menu-item-icon"></ion-icon>
+        <div class="item-text bold disabled">Sport</div>
+      </ion-item>
+
+      <ion-item (click)="navigate('health')">
+        <ion-icon src="/assets/icon/icon-health-disabled.svg" class="menu-item-icon"></ion-icon>
+        <div class="item-text bold disabled">Health</div>
+      </ion-item>
+
+      <ion-item (click)="navigate('culture')">
+        <ion-icon src="/assets/icon/icon-culture.svg" class="menu-item-icon"></ion-icon>
+        <div class="item-text bold enabled">Culture</div>
+      </ion-item>
+
+      <ion-item (click)="navigate('soccer')">
+        <ion-icon src="/assets/icon/icon-soccer-disabled.svg" class="menu-item-icon"></ion-icon>
+        <div class="item-text bold disabled">Soccer</div>
+      </ion-item>
+
+      <ion-item (click)="navigate('speed')">
+        <ion-icon src="/assets/icon/icon-speed-disabled.svg" class="menu-item-icon"></ion-icon>
+        <div class="item-text bold disabled">Speed</div>
+      </ion-item>
+
+      <ion-item (click)="navigate('education')">
+        <ion-icon src="/assets/icon/icon-education-disabled.svg" class="menu-item-icon"></ion-icon>
+        <div class="item-text bold disabled">Education</div>
+      </ion-item>
+
+      <ion-item (click)="navigate('wow')">
+        <ion-icon src="/assets/icon/icon-wow.svg" class="menu-item-icon"></ion-icon>
+        <div class="item-text" style="margin-right: 5px">Just</div><div class="item-text bold enabled">Wow</div>
+      </ion-item>
+
+    </ion-list>
+  </ion-content>  
+
+</ion-menu>
